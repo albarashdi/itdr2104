@@ -1,0 +1,2 @@
+Our text file
+This is new text from file writer

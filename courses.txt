@@ -1,0 +1,3 @@
+ITDR1101 IT 75
+COMM2111 Comunication 36
+DESG3001 Design 22
