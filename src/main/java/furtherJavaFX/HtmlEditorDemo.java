@@ -10,6 +10,7 @@ import java.io.File;
 import java.io.FileNotFoundException;
 import java.io.PrintWriter;
 import javafx.application.Application;
+import javafx.geometry.Pos;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.scene.layout.VBox;
@@ -25,6 +26,7 @@ public class HtmlEditorDemo extends Application{
     @Override
     public void start(Stage stage){
         HTMLEditor htmlEditor = new HTMLEditor();
+        htmlEditor.setPrefHeight(300);
         Button saveBtn = new Button("Save html page");
         saveBtn.setOnAction(e->{
             
@@ -41,9 +43,10 @@ public class HtmlEditorDemo extends Application{
            
         });
         VBox vBox = new VBox(htmlEditor,saveBtn);
+        vBox.setAlignment(Pos.CENTER);
         Scene scene = new Scene(vBox);
         stage.setScene(scene);
-        stage.setTitle("JavaFX App");
+        stage.setTitle("JavaFX HTML Editor");
 
         stage.show();
     }
